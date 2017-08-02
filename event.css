@@ -1,0 +1,70 @@
+body {
+  background-color:#363840;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align:center;
+  color:#24DC8D;
+}
+
+h2 {
+  text-align:center;
+  color:#989DA2;
+}
+
+p {
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  color:#989DA2;
+}
+
+div {
+  background-color:#363840;
+  border: 1px solid #989DA2;
+  margin-right:auto;
+  margin-left:auto;
+  cursor:pointer;
+}
+
+#one {
+  width:500px;
+  height:500px;
+}
+
+#two {
+  width:400px;
+  height:400px;
+}
+
+#three {
+  width:300px;
+  height:300px;
+}
+
+#four {
+  width:200px;
+  height:200px;
+}
+
+#five {
+  width:100px;
+  height:100px;
+}
+
+#two, #three, #four, #five {
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.grad {
+  border:1px solid #000000;
+  background: #24DC8D; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#26BED3, #24DC8D); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#26BED3, #24DC8D); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#26BED3, #24DC8D); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#26BED3, #24DC8D); /* Standard syntax */
+}

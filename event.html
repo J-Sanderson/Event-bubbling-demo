@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event bubbling demo</title>
+<link rel="stylesheet" type="text/css" href="event.css" media="screen" />
+<script  type="text/javascript" src="event.js"></script>
+</head>
+<body>
+
+<h1>Event Bubbling Demo</h1>
+
+<div id='one' onclick="addGrad(this.id)">
+  <div id='two' onclick="addGrad(this.id)">
+    <div id='three' onclick="addGrad(this.id)">
+      <div id='four' onclick="addGrad(this.id)">
+        <div id='five' onclick="addGrad(this.id)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>How it works</h2>
+
+<p>Each div above is numbered from one (outermost) to five (innermost), and carries a click handler for the addGrad() function. Click on any one of the divs to see the click event bubble upwards through the nested divs!</p>
+
+</body>
+</html>
